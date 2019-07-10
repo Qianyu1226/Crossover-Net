@@ -8,11 +8,11 @@ from torch.autograd import Variable
 import torch.nn.functional as F
 import torch.optim as optim
 #import matplotlib.pyplot as plt
-from HV_net import hvCNN
-from CrossLoss import MyLoss
+from modules.HV_net import hvCNN
+from modules.CrossLoss import MyLoss
 import datetime
 import math
-np.set_printoptions(threshold=np.NaN)  #for print
+np.set_printoptions(threshold=np.NaN)  
 #  load matlab v7.3 files for training data
 import h5py
 with h5py.File('./data/train_data.mat', 'r') as f:
